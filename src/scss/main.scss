@@ -1,5 +1,13 @@
-// common styles
+// utils
 @import "utils/reset";
 @import "utils/fonts";
 @import "utils/vars";
+@import "utils/general";
+
+// blocks
 @import "blocks/header";
+@import "blocks/footer";
+
+// elements
+@import "elements/input";
+@import "elements/button";

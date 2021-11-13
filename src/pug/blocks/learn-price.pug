@@ -1,2 +1,9 @@
+- let title = 'узнайте стоимость своей доставки <span>сейчас</span>!'
+
+include ../elements/button
+
 article.learn-price 
-  h2 стоимость
+  .learn-price__pic
+  .learn-price__content
+    h2.title!= title
+    +button('рассчитать')(href="/")
