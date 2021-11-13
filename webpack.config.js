@@ -12,7 +12,7 @@ const PATHS = {
 	dist: path.join(__dirname, "./dist"),
 };
 
-const PAGES_DIR = `${PATHS.src}/pug/pages/`;
+const PAGES_DIR = `${PATHS.src}/`;
 const PAGES = fs.readdirSync(PAGES_DIR).filter((fileName) => fileName.endsWith(".pug"));
 
 const filename = (ext) => `[name].${ext}`;
@@ -30,7 +30,10 @@ const plugins = () => {
 			filename: `./css/${filename("css")}`,
 		}),
 		new CopyWebpackPlugin({
-			patterns: [{ from: path.resolve(__dirname, "src/assets"), to: path.resolve(`${PATHS.dist}`) }],
+			patterns: [
+				{ from: path.resolve(__dirname, "src/assets"), to: path.resolve(`${PATHS.dist}`) },
+				{ from: path.resolve(__dirname, "src/img"), to: path.resolve(`${PATHS.dist}/img/`) },
+			],
 		}),
 	];
 
