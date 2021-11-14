@@ -1,2 +1,24 @@
-article.advantages.hidden__md
-  p преимущества
+- let title = 'преимущества ДОСТАВКИ ОТ САТУРНА'
+- 
+  let list = [
+    { 
+      text: 'Бесплатно или по минимальному тарифу (в «зоне действия единой стоимости доставки»)'
+    },
+    { 
+      text: 'В удобное для вас время'
+    },
+    { 
+      text: 'Бережная транспортировка на оборудованных автомобилях'
+    },  
+    { 
+      text: 'Доставка по Петербургу, области и пригородам'
+    }
+  ]
+
+article.advantages.visible__md
+  .inner-container
+    h2.title= title
+    ul.advantages-list
+      each item in list
+        li 
+          p= item.text

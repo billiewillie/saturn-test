@@ -1,0 +1,13 @@
+.learn-price {
+	background-color: #fff;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__pic {
+		width: 50%;
+	}
+	&__content {
+		width: 50%;
+	}
+}

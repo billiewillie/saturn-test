@@ -3,7 +3,9 @@
 include ../elements/button
 
 article.learn-price 
-  .learn-price__pic
-  .learn-price__content
-    h2.title!= title
-    +button('рассчитать')(href="/")
+  .inner-container.learn-price__container
+    .learn-price__pic
+      p picture
+    .learn-price__content
+      h2.title!= title
+      +button('рассчитать')(href="/")
