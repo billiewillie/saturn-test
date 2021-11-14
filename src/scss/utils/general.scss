@@ -9,10 +9,46 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
 }
 
 .container {
 	width: 100%;
 	margin: 0 auto;
 	max-width: 960px;
+	padding: 0;
+}
+
+.inner-container {
+	padding: 0 10px;
+}
+
+.visible__sm {
+	display: none !important;
+
+	@media (min-width: $tablet) {
+		display: flex !important;
+	}
+}
+
+.visible__md {
+	display: none !important;
+
+	@media (min-width: $desktop) {
+		display: flex !important;
+	}
+}
+
+.hidden__sm {
+	@media (min-width: $tablet) {
+		display: none !important;
+	}
+}
+
+.hidden__md {
+	@media (min-width: $desktop) {
+		display: none !important;
+	}
 }

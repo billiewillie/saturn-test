@@ -1,2 +1,18 @@
-article.first-screen 
-  p first-screen
+- let list = ['Доставка', 'Разгрузка и подъем', 'Колеровка красок', 'Резка и распил', 'Оплата товара', 'Программа лояльности', 'Как заказать', 'Возврат']
+- let title = 'ДОСТАВКА ТОВАРА'
+- let text = 'Избавьтесь от забот по погрузке, доставке и разгрузке купленного товара! Теперь всё это мы сделаем за Вас!  Быстро и бережно доставим Вашу покупку на дачу, в квартиру или на объект.'
+- let image = './img/car.png'
+
+article.first-screen.visible__md
+  .container.first-screen-container
+    ul.first-screen-list
+      each item in list
+        li.first-screen-item 
+          a.first-screen-item__link= item
+    .first-screen-slider
+      .first-screen-slider__item 
+        .first-screen-slider__item-pic
+          img(src= image)
+        .first-screen-slider__item-content
+          h1.title= title
+          p.text= text

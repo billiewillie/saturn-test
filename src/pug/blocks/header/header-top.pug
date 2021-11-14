@@ -1,2 +1,14 @@
+- let name = 'Артур Пирожков'
+- let href = "tel:88123222266"
+- let phone = "8 (812) 322-22-66"
+
 .header-top 
-  p header-top 
+  .inner-container
+    .hidden__md
+      a(type="tel" href= href)
+        span= phone
+    .visible__md
+      .header-saved 
+      .user 
+        span.user-name= name 
+      
