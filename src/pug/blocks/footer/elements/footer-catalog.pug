@@ -1,0 +1,21 @@
+- let title = 'каталог'
+- 
+  let list = [
+    {
+      href: '/',
+      text: 'text 1'
+    },
+    {
+      href: '/',
+      text: 'text 2'
+    }
+  ]
+
+
+.footer-catalog
+  p= title
+  ul.footer-catalog-list
+    each item in list
+      li.footer-catalog-item 
+        a(href= item.href)
+          span= item.text

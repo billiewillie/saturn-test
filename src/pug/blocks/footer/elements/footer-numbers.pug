@@ -1,0 +1,18 @@
+- let text = 'addsfdsgs'
+- 
+  let numbers = [
+    {
+      href: '/',
+      number: '888888888'
+    },
+    {
+      href: '/',
+      number: '7777777'
+    }
+  ]
+
+.footer-numbers
+  p= text
+  each item in numbers
+    a.footer-numbers-item(href= item.href)
+      span= item.number

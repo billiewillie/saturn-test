@@ -1,0 +1,19 @@
+- 
+  let list = [
+    {
+      text: "правильный ассортимент"
+    },
+        {
+      text: "правильная цена"
+    },
+        {
+      text: "наличие на складе"
+    },
+  ]
+
+.footer-desktop-bottom
+  .inner-container
+    ul.footer-desktop-bottom-list   
+      each item in list
+        li.footer-desktop-bottom-item 
+          span= item.text

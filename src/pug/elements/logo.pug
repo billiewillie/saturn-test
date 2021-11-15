@@ -1,4 +1,7 @@
-- let src = './img/logo.svg'
-
-a.logo(href='/')
-  img(src= src)
+mixin logo(type='black')
+  a.logo(href='/')
+    if(type === 'white')
+      img(src='./img/logo_white.svg')
+    else 
+      img(src='./img/logo.svg')
+  

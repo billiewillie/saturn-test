@@ -1,3 +1,36 @@
 .footer {
 	background-color: $blue;
+	color: #fff;
+
+	&-desktop {
+		display: flex;
+		flex-direction: column;
+		&-top {
+			&-container {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+		&-middle {
+			&-container {
+				display: flex;
+				align-items: center;
+			}
+		}
+		&-credits {
+			text-align: center;
+		}
+		&-bottom {
+			width: 100%;
+			padding: 25px 0;
+			&-list {
+				display: flex;
+				justify-content: space-between;
+			}
+			&-item {
+				color: #fff;
+				text-transform: uppercase;
+			}
+		}
+	}
 }

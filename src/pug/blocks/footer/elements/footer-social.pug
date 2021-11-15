@@ -1,0 +1,20 @@
+- let title = 'Мы в соцсетях'
+- 
+  let list = [
+    {
+      href: '/'
+    },
+        {
+      href: '/'
+    },
+        {
+      href: '/'
+    }
+  ]
+
+.footer-social 
+  p= title
+  ul.footer-social-list 
+    each item in list
+      li.footer-social-item 
+        a.footer-social-link(href= item.href) link
