@@ -4,7 +4,7 @@ h4,
 h5,
 h6 {
 	line-height: 1.2;
-	font-family: $font_black;
+	// font-family: $font_black;
 	position: relative;
 }
 
@@ -26,7 +26,7 @@ h2 {
 
 h3 {
 	font-size: $fz-h3-mobile;
-	font-family: $font_semibold;
+	// font-family: $font_semibold;
 	line-height: 1.6;
 
 	@media (min-width: $tablet) {
@@ -34,9 +34,14 @@ h3 {
 	}
 
 	&.title {
-		font-family: $font_regular;
+		// font-family: $font_regular;
 		text-transform: uppercase;
 	}
+}
+
+a {
+	color: #fff;
+	cursor: pointer;
 }
 
 p {
@@ -47,7 +52,7 @@ p {
 }
 
 span {
-	font-size: 12px;
+	font-size: 11px;
 }
 
 .accent_text {
@@ -56,7 +61,7 @@ span {
 
 .title {
 	text-transform: uppercase;
-	font-family: $font_black;
+	// font-family: $font_black;
 }
 
 .title_passive {

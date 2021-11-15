@@ -5,10 +5,22 @@
 .header-top 
   .inner-container
     .hidden__md
-      a(type="tel" href= href)
+      a.header-top__number(type="tel" href= href)
         span= phone
-    .visible__md
-      .header-saved 
-      .user 
-        span.user-name= name 
+    .visible__md.header-account
+      .header-top-icons
+        .header-liked
+          .pic
+            img(src='./img/icons/star.svg')
+            .header-amount__icon
+              span 20
+        .header-saved 
+          .pic
+            img(src='./img/icons/star.svg')
+            .header-amount__icon
+              span 20
+      .header-user 
+        a.user-name(href='/')= name 
+        .header-amount__icon
+          span 2
       

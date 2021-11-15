@@ -1,0 +1,44 @@
+- let title = 'покупателям'
+- 
+  let list = [
+    {
+      href: '/',
+      text: 'Акции'
+    },
+    {
+      href: '/',
+      text: 'Как заказать'
+    },
+        {
+      href: '/',
+      text: 'Подарочные карты'
+    },
+        {
+      href: '/',
+      text: 'Обмен, возврат товара'
+    },
+    {
+      href: '/',
+      text: 'Наши бренды'
+    },
+        {
+      href: '/',
+      text: 'Наши партнеры'
+    },
+        {
+      href: '/',
+      text: 'Оплата'
+    },
+    {
+      href: '/',
+      text: 'Обратная связь'
+    }
+  ]
+
+.footer-menu-block
+  p= title
+  ul.footer-menu-list
+    each item in list
+      li.footer-menu-item 
+        a(href= item.href)
+          span= item.text

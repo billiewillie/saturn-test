@@ -9,6 +9,7 @@
 			&-container {
 				display: flex;
 				justify-content: space-between;
+				column-gap: 30px;
 			}
 		}
 		&-middle {
@@ -32,5 +33,11 @@
 				text-transform: uppercase;
 			}
 		}
+	}
+
+	&-menu {
+		display: flex;
+		justify-content: space-between;
+		flex: auto;
 	}
 }

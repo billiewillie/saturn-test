@@ -14,13 +14,39 @@
 			border-bottom: none;
 			flex-direction: row;
 		}
+
+		&__number {
+			color: #494949;
+			& span {
+				text-decoration: underline;
+				text-underline-offset: 1px;
+			}
+		}
 	}
 
 	&-main {
 		padding: 10px 0;
 		background-color: $bg_color;
+		position: relative;
 		@media (min-width: $desktop) {
-			border-radius: 5px 5px 0 0;
+			border-radius: 3px 3px 0 0;
+		}
+
+		&::before {
+			display: none;
+			@media (min-width: $desktop) {
+				display: block;
+				position: absolute;
+				content: "";
+				width: 1000%;
+				height: 100px;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgb(6, 38, 74);
+				background: linear-gradient(180deg, rgba(6, 38, 74, 1) 0%, rgba(2, 14, 28, 1) 57%);
+				z-index: -1;
+			}
 		}
 
 		&__container {
@@ -64,5 +90,75 @@
 		@media (min-width: $desktop) {
 			order: 3;
 		}
+	}
+
+	&-top-icons {
+		display: flex;
+		column-gap: 30px;
+	}
+
+	&-liked {
+		position: relative;
+		& .pic {
+			width: 25px;
+			height: 25px;
+		}
+		& .header-amount__icon {
+			position: absolute;
+			left: 80%;
+			top: 2px;
+		}
+	}
+
+	&-saved {
+		position: relative;
+		& .pic {
+			width: 25px;
+			height: 25px;
+		}
+		& .header-amount__icon {
+			position: absolute;
+			left: 80%;
+			top: 2px;
+		}
+	}
+
+	&-amount__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background-color: $red;
+		width: 17px;
+		height: 17px;
+
+		& span {
+			color: #fff;
+			line-height: 1;
+			text-decoration: none;
+		}
+	}
+
+	&-user {
+		display: flex;
+		column-gap: 8px;
+		margin-left: 150px;
+		& .user-name {
+			font-size: 13px;
+			color: #fff;
+			text-decoration: underline;
+			text-underline-offset: 2px;
+		}
+
+		&:hover {
+			& .user-name {
+				text-decoration: none;
+			}
+		}
+	}
+
+	&-account {
+		display: flex;
+		align-items: center;
 	}
 }

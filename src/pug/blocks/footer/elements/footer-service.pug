@@ -1,0 +1,33 @@
+- let title = 'услуги'
+- 
+  let list = [
+    {
+      href: '/',
+      text: 'Доставка товара'
+    },
+    {
+      href: '/',
+      text: 'Разгрузка'
+    },
+        {
+      href: '/',
+      text: 'Подъем на этаж'
+    },
+    {
+      href: '/',
+      text: 'Распил/резка'
+    },
+    {
+      href: '/',
+      text: 'Колеровка'
+    }
+  ]
+
+
+.footer-menu-block
+  p= title
+  ul.footer-menu-list
+    each item in list
+      li.footer-menu-item 
+        a(href= item.href)
+          span= item.text

@@ -1,0 +1,24 @@
+- let title = 'интересное'
+- 
+  let list = [
+    {
+      href: '/',
+      text: 'Статьи'
+    },
+    {
+      href: '/',
+      text: 'Обзоры'
+    },
+        {
+      href: '/',
+      text: 'Советы'
+    }
+  ]
+
+.footer-menu-block
+  p= title
+  ul.footer-menu-list
+    each item in list
+      li.footer-menu-item 
+        a(href= item.href)
+          span= item.text

@@ -1,0 +1,28 @@
+- let title = 'о компании'
+- 
+  let list = [
+    {
+      href: '/',
+      text: 'О группе компаний'
+    },
+    {
+      href: '/',
+      text: 'Вакансии'
+    },
+        {
+      href: '/',
+      text: 'Реквизиты'
+    },
+    {
+      href: '/',
+      text: 'Сотрудничество'
+    }
+  ]
+
+.footer-menu-block
+  p= title
+  ul.footer-menu-list
+    each item in list
+      li.footer-menu-item 
+        a(href= item.href)
+          span= item.text
