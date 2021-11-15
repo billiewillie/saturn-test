@@ -161,4 +161,11 @@
 		display: flex;
 		align-items: center;
 	}
+
+	&-info {
+		display: flex;
+		&__part {
+			display: flex;
+		}
+	}
 }

@@ -1,0 +1,25 @@
+- 
+  let list = [
+    {
+      img: './img/icons/star.svg',
+      text: 'Ваш город'
+    },
+    {
+      img: './img/icons/star.svg',
+      text: '8 929 4354353'
+    },
+    {
+      img: './img/icons/star.svg',
+      text: 'ыпывоп ывпоывжпов выывлопвыо'
+    }
+  ]
+
+.header-info 
+  each item in list
+    .header-info__part 
+      .pic.header-info__part-pic
+        img(src= item.img)
+      .header-info__part-content
+        p= item.text
+
+    

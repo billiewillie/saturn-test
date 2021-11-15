@@ -1,6 +1,10 @@
 .button {
 	background-color: $red;
 	display: flex;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+	justify-content: center;
 
 	& span {
 		text-transform: uppercase;

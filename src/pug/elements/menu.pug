@@ -1,0 +1,26 @@
+- 
+  let list = [
+    {
+      href: "/", 
+      text: "акции и новости"
+    },
+        {
+      href: "/", 
+      text: "магазины"
+    },
+        {
+      href: "/", 
+      text: "услуги"
+    },
+        {
+      href: "/", 
+      text: "потребителям"
+    }
+  ]
+
+nav.menu 
+  ul.menu-list 
+    each item in list
+      li.menu-item  
+        a(href= item.href)
+          span= item.text
