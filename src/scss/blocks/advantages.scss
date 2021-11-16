@@ -1,3 +1,17 @@
 .advantages {
 	background-color: #fff;
+
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&-item {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	&-title {
+		margin-bottom: 30px;
+	}
 }

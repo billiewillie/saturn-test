@@ -1,11 +1,15 @@
-- let title = 'узнайте стоимость своей доставки <span>сейчас</span>!'
-
+- let title = 'Узнайте стоимость<br> своей доставки<span>&#160;сейчас</span>!'
+- let src = './img/car.png'
+- let src_desktop = './img/pc.png'
 include ../elements/button
 
-article.learn-price(style="	background-image: url(./img/learn-price-bg.png);")
-  .inner-container.learn-price__container
+article.learn-price
+  .inner-container.learn-price__container.inner-container_main
     .learn-price__pic
-      p picture
+      .pic.hidden__md
+        img(src= src)
+      .pic.visible__md
+        img(src= src_desktop)
     .learn-price__content
       h2.title!= title
-      +button('рассчитать')(href="/")
+      +button('Рассчитать')(href="/")

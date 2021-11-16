@@ -3,6 +3,26 @@
 		border-top: 1px solid #183457;
 	}
 
+	&-general {
+		position: relative;
+		&::before {
+			display: none;
+			@media (min-width: $desktop) {
+				display: block;
+				position: absolute;
+				content: "";
+				width: 1000%;
+				height: 100%;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgb(6, 38, 74);
+				background: linear-gradient(180deg, rgba(6, 38, 74, 1) 0%, rgba(2, 14, 28, 1) 57%);
+				z-index: -1;
+			}
+		}
+	}
+
 	&-top {
 		padding: 7px 0;
 		background-color: $bg_alt_color;
@@ -32,27 +52,14 @@
 			border-radius: 3px 3px 0 0;
 		}
 
-		&::before {
-			display: none;
-			@media (min-width: $desktop) {
-				display: block;
-				position: absolute;
-				content: "";
-				width: 1000%;
-				height: 100px;
-				bottom: 0;
-				left: 50%;
-				transform: translateX(-50%);
-				background: rgb(6, 38, 74);
-				background: linear-gradient(180deg, rgba(6, 38, 74, 1) 0%, rgba(2, 14, 28, 1) 57%);
-				z-index: -1;
-			}
-		}
-
 		&__container {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+
+			@media (min-width: $desktop) {
+				padding: 0 25px;
+			}
 		}
 	}
 
@@ -72,6 +79,9 @@
 
 	&-logo {
 		max-width: 140px;
+		@media (min-width: $desktop) {
+			max-width: 180px;
+		}
 	}
 
 	&-search {
@@ -164,8 +174,57 @@
 
 	&-info {
 		display: flex;
+		column-gap: 50px;
 		&__part {
 			display: flex;
+			align-items: center;
+			position: relative;
+			column-gap: 10px;
+			font-size: 13px;
+			line-height: 1.1;
+			&-pic {
+				width: 25px;
+				height: 25px;
+			}
+
+			&:nth-child(2) {
+				text-align: center;
+			}
+
+			&::after {
+				display: block;
+				position: absolute;
+				content: "";
+				width: 1px;
+				height: 100%;
+				bottom: 0;
+				right: -25px;
+				background-color: #d9d9d9;
+			}
+
+			&:last-child {
+				&::after {
+					display: none;
+				}
+			}
+		}
+		&__number {
+			color: #000;
+			font-size: 13px;
+		}
+		&__city {
+			text-decoration: underline;
+			text-underline-offset: 2px;
+			color: #000;
+			font-size: 13px;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		& .accent {
+			color: $red;
+			font-weight: 600;
+			font-size: 15px;
 		}
 	}
 }

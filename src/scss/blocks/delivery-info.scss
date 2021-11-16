@@ -1,0 +1,20 @@
+.delivery-info {
+	padding: 20px 0 25px;
+
+	& .title {
+		margin-bottom: 15px;
+		color: #000;
+	}
+
+	&__text {
+		margin-bottom: 15px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	& .accent {
+		color: $red;
+		text-decoration: underline;
+		text-underline-offset: 2px;
+	}
+}

@@ -23,6 +23,12 @@ body {
 
 .inner-container {
 	padding: 0 10px;
+
+	&_main {
+		@media (min-width: $tablet) {
+			padding: 0 65px;
+		}
+	}
 }
 
 .visible__sm {

@@ -1,25 +1,25 @@
 - 
   let list = [
     {
-      img: './img/icons/star.svg',
-      text: 'Ваш город'
+      img: './img/icons/star-dark.svg',
+      text: 'Ваш город:<br><a class="header-info__city">Санкт-Петербург</a>'
     },
     {
-      img: './img/icons/star.svg',
-      text: '8 929 4354353'
+      img: './img/icons/star-dark.svg',     
+      text: '<a class="header-info__number"><b>8 (812) 322-22-66</b><br>Заказать звонок</a>'
     },
     {
-      img: './img/icons/star.svg',
-      text: 'ыпывоп ывпоывжпов выывлопвыо'
+      img: './img/icons/star-dark.svg',
+      text: '<span class="accent">(10)</span> товаров<br> на сумму <span class="accent">5 364 р.</span>'
     }
   ]
 
-.header-info 
+.header-info.visible__md
   each item in list
     .header-info__part 
       .pic.header-info__part-pic
         img(src= item.img)
       .header-info__part-content
-        p= item.text
+        p!= item.text
 
     

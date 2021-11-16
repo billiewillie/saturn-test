@@ -16,9 +16,9 @@
   ]
 
 article.advantages.visible__md
-  .inner-container
-    h2.title= title
+  .inner-container.inner-container_main
+    h2.title.advantages-title= title
     ul.advantages-list
       each item in list
-        li 
+        li.advantages-item
           p= item.text

@@ -1,12 +1,37 @@
 .first-screen {
 	background-color: #fff;
+	padding-bottom: 70px;
 	&-container {
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-start;
+		align-items: center;
 	}
 
 	&-slider__item {
 		display: flex;
+	}
+
+	&-list {
+		display: flex;
+		flex-direction: column;
+		width: 200px;
+		padding: 20px 0;
+	}
+
+	&-item {
+		padding: 10px 10px 10px 25px;
+		&__link {
+			color: #010101;
+			font-size: 13px;
+		}
+	}
+
+	&-slider {
+		width: 100%;
+		padding-right: 25px;
+
+		&__item-content {
+			width: 50%;
+		}
 	}
 }

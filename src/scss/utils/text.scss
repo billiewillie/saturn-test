@@ -17,6 +17,9 @@ h1 {
 
 	&.title {
 		color: $red;
+		letter-spacing: 1px;
+		font-weight: bold;
+		margin-bottom: 25px;
 	}
 }
 
@@ -26,8 +29,11 @@ h2 {
 	@media (min-width: $tablet) {
 		font-size: $fz-h2-tablet;
 	}
+
 	&.title {
 		color: $red;
+		font-size: $fz-h2-tablet;
+		font-weight: bold;
 	}
 }
 
@@ -52,9 +58,9 @@ a {
 }
 
 p {
-	line-height: 1.6;
+	line-height: 1.1;
 	@media (min-width: $desktop) {
-		font-size: 16px;
+		font-size: 13px;
 	}
 }
 
