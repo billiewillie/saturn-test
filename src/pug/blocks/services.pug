@@ -1,0 +1,21 @@
+- let title = 'Другие услуги'
+- 
+  let list = [
+    {
+      href: '/',
+      title: 'title 1'
+    },
+      {
+      href: '/',
+      title: 'title 2'
+    }
+  ]
+
+article.services.hidden__md
+  .inner-container.inner-container_main
+    h2.title 
+    ul.services-list.slider
+      each item in list
+        li.services-item.slider-item
+          a.services-item__link(href= item.href)
+            h3.title.slider-item__title= item.title

@@ -2,7 +2,8 @@
   let list = [
     {
       href: "/", 
-      text: "акции и новости"
+      text: "акции и новости",
+      active: true,
     },
         {
       href: "/", 
@@ -21,6 +22,11 @@
 nav.menu 
   ul.menu-list 
     each item in list
-      li.menu-item  
-        a(href= item.href)
-          span= item.text
+      if(item.active)
+        li.menu-item.active
+          a(href= item.href)
+            span= item.text
+      else
+        li.menu-item  
+          a(href= item.href)
+            span= item.text

@@ -64,7 +64,7 @@
 	}
 
 	&-bottom {
-		padding: 0 0 10px 0;
+		padding: 0;
 		background-color: $bg_color;
 		@media (min-width: $desktop) {
 			border-radius: 5px 5px 0 0;
@@ -74,6 +74,9 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			@media (min-width: $desktop) {
+				padding: 0 25px;
+			}
 		}
 	}
 
@@ -87,11 +90,13 @@
 	&-search {
 		@media (min-width: $desktop) {
 			order: 2;
+			width: 300px;
 		}
 	}
 
 	&-catalog {
 		@media (min-width: $desktop) {
+			width: 200px;
 			order: 1;
 		}
 	}
@@ -99,6 +104,7 @@
 	&-menu {
 		@media (min-width: $desktop) {
 			order: 3;
+			flex: auto;
 		}
 	}
 

@@ -1,4 +1,46 @@
 .types {
 	background-color: #fff;
 	padding-bottom: 60px;
+
+	&-list {
+		margin-bottom: 10px;
+	}
+
+	&-item {
+		padding: 10px 0;
+		border-bottom: 1px dotted #000;
+		@media (min-width: $desktop) {
+			display: flex;
+			padding: 10px;
+			border-top: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+			border-left: 1px solid #ccc;
+			border-bottom: none;
+		}
+		&:last-child {
+			@media (min-width: $desktop) {
+				border-top: 1px solid #ccc;
+				border-right: 1px solid #ccc;
+				border-left: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;
+			}
+		}
+
+		&__title {
+			width: 30%;
+		}
+
+		&__content {
+			width: 70%;
+		}
+	}
+
+	&-title {
+		@media (min-width: $desktop) {
+			padding: 10px;
+			border-top: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+			border-left: 1px solid #ccc;
+		}
+	}
 }

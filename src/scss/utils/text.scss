@@ -31,24 +31,22 @@ h2 {
 	}
 
 	&.title {
-		color: $red;
+		color: #000;
 		font-size: $fz-h2-tablet;
 		font-weight: bold;
+
+		@media (min-width: $desktop) {
+			color: $red;
+		}
 	}
 }
 
 h3 {
 	font-size: $fz-h3-mobile;
-	// font-family: $font_semibold;
-	line-height: 1.6;
-
-	@media (min-width: $tablet) {
-		font-size: $fz-h3-desktop;
-	}
+	line-height: 1.1;
 
 	&.title {
-		// font-family: $font_regular;
-		text-transform: uppercase;
+		font-weight: bold;
 	}
 }
 
@@ -74,15 +72,6 @@ span {
 
 .title {
 	text-transform: uppercase;
-	// font-family: $font_black;
-}
-
-.title_passive {
-	opacity: 0.2;
-}
-
-.text_helper {
-	opacity: 0.5;
 }
 
 .text_special {

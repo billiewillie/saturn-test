@@ -1,3 +1,4 @@
+- let title = 'типы доставки'
 - let notice = 'Итоговое подтверждение возможности доставки осуществляется оператором по телефону.'
 - 
   let info = {
@@ -21,20 +22,21 @@
         {
       title: "Точно ко времени",
       text: 'Осуществляется с 9:00 до 22:00.<br> На текущий день доставка оформляется до 10:30.',
-      text_notice: '(Чтобы мы привезли заказ сегодня, он должен быть оформлен и подтвержден оператором с 8:00 до 17:00. Если заказ будет оформлен и подтвержден сегодня после 17:00, он будет доставлен не ранее 13:00 завтрашнего дня).'
+      text_special: '(Чтобы мы привезли заказ сегодня, он должен быть оформлен и подтвержден оператором с 8:00 до 17:00. Если заказ будет оформлен и подтвержден сегодня после 17:00, он будет доставлен не ранее 13:00 завтрашнего дня).'
     },
   ]
 
 article.types 
   .inner-container.inner-container_main
-    h2.title типы доставки
+    h2.title.types-title.visible__md= title
     ul.types-list
       each item in list
-        li 
-          p= item.title
-          p!= item.text
-          if(item.text_special)
-            p!= item.text_special
+        li.types-item
+          h3.title.types-item__title= item.title
+          .types-item__content
+            p!= item.text
+            if(item.text_special)
+              p!= item.text_special
     .notice 
       p.notice-text= notice
       //- each value in info
