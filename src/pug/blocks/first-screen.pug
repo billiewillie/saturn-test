@@ -1,4 +1,39 @@
-- let list = ['Доставка', 'Разгрузка и подъем', 'Колеровка красок', 'Резка и распил', 'Оплата товара', 'Программа лояльности', 'Как заказать', 'Возврат']
+- 
+  let list = [
+    {
+      text: 'Доставка',
+      active: true,
+    }, 
+    {
+      text: 'Разгрузка и подъем',
+      active: false,
+    },
+    {
+      text: 'Колеровка красок',
+      active: false,
+    },
+    {
+      text: 'Резка и распил',
+      active: false,
+    },
+    {
+      text: 'Оплата товара',
+      active: false,
+    },
+    {
+      text: 'Программа лояльности',
+      active: false,
+    }, 
+    {
+      text: 'Как заказать',
+      active: false,
+    },
+    {
+      text: 'Возврат',
+      active: false,
+    }
+  ]
+
 - let title = 'доставка товара'
 - let text = 'Избавьтесь от забот по погрузке, доставке и разгрузке купленного товара! Теперь всё это мы сделаем за Вас!  Быстро и бережно доставим Вашу покупку на дачу, в квартиру или на объект.'
 - let image = './img/car.png'
@@ -7,8 +42,12 @@ article.first-screen.visible__md
   .container.first-screen-container
     ul.first-screen-list
       each item in list
-        li.first-screen-item 
-          a.first-screen-item__link= item
+        if(item.active)
+          li.first-screen-item.active
+            a.first-screen-item__link= item.text
+        else
+          li.first-screen-item
+            a.first-screen-item__link= item.text
     .first-screen-slider
       .first-screen-slider__item 
         .first-screen-slider__item-pic

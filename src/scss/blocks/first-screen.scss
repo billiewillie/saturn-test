@@ -14,7 +14,7 @@
 	&-list {
 		display: flex;
 		flex-direction: column;
-		width: 200px;
+		width: 225px;
 		padding: 20px 0;
 	}
 
@@ -24,6 +24,14 @@
 			color: #010101;
 			font-size: 13px;
 		}
+
+		&.active {
+			background-color: #00152c;
+
+			& .first-screen-item__link {
+				color: #fff;
+			}
+		}
 	}
 
 	&-slider {
@@ -31,6 +39,15 @@
 		padding-right: 25px;
 
 		&__item-content {
+			width: 50%;
+
+			& p {
+				line-height: 2;
+				font-size: 14px;
+			}
+		}
+
+		&__item-pic {
 			width: 50%;
 		}
 	}

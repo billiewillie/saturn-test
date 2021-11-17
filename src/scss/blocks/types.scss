@@ -3,7 +3,11 @@
 	padding-bottom: 60px;
 
 	&-list {
-		margin-bottom: 10px;
+		margin-bottom: 16px;
+
+		@media (min-width: $desktop) {
+			margin-bottom: 24px;
+		}
 	}
 
 	&-item {
@@ -11,11 +15,12 @@
 		border-bottom: 1px dotted #000;
 		@media (min-width: $desktop) {
 			display: flex;
-			padding: 10px;
+			padding: 25px 25px 25px 40px;
 			border-top: 1px solid #ccc;
 			border-right: 1px solid #ccc;
 			border-left: 1px solid #ccc;
 			border-bottom: none;
+			align-items: center;
 		}
 		&:last-child {
 			@media (min-width: $desktop) {
@@ -28,19 +33,43 @@
 
 		&__title {
 			width: 30%;
+			text-transform: inherit;
 		}
 
 		&__content {
 			width: 70%;
+
+			& p {
+				font-size: 14px;
+				line-height: 1.5;
+
+				&.types-item__text_special {
+					font-size: 12px;
+					margin-top: 15px;
+					color: #8a8a8a;
+				}
+			}
 		}
 	}
 
 	&-title {
 		@media (min-width: $desktop) {
-			padding: 10px;
+			padding: 25px 25px 25px 40px;
 			border-top: 1px solid #ccc;
 			border-right: 1px solid #ccc;
 			border-left: 1px solid #ccc;
+		}
+	}
+
+	&-notice {
+		&__text {
+			font-size: 14px;
+		}
+		&__link {
+			text-decoration: underline;
+			color: #656565;
+			font-size: 12px;
+			text-underline-offset: 2px;
 		}
 	}
 }

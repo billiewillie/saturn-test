@@ -1,9 +1,19 @@
-- let title = 'разгрузка и подъем'
-- let text = 'Мы заботимся о наших клиентах и всегда готовы предоставить полный комплекс услуг. Помимо доставки мы можем осуществить разгрузку, пронос и подъем ваших товаров.'
+- let title1 = 'разгрузка и подъем'
+- let text1 = 'Мы заботимся о наших клиентах и всегда готовы предоставить полный комплекс услуг. Помимо доставки мы можем осуществить разгрузку, пронос и подъем ваших товаров.'
 - let question = 'нужно разгрузить и поднять товары?'
-- let button = 'подробности'
+- let button_text = 'подробности'
+
+include ../elements/button
 
 article.delivery.visible__md
   .inner-container.inner-container_main
-    h2.title= title
-    p.text= text
+    h2.title.delivery-title= title1
+    p.delivery-text= text1
+    .delivery-content 
+      .delivery-content__pic
+        .pic 
+          img(src="./img/delivery.png")
+      .delivery-content__details
+        p.delivery-content__details-text= question
+        +button('подробности')(href="/")
+      

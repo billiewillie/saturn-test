@@ -1,0 +1,21 @@
+.amount-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: $red;
+	width: 17px;
+	height: 17px;
+
+	& span {
+		color: #fff;
+		line-height: 1;
+		text-decoration: none;
+	}
+
+	&__bucket {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+}

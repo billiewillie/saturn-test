@@ -2,15 +2,19 @@
 - 
   let list = [
     { 
+      image: './img/icons/star-black.svg',
       text: 'Бесплатно или по минимальному тарифу (в «зоне действия единой стоимости доставки»)'
     },
     { 
-      text: 'В удобное для вас время'
+      image: './img/icons/star-black.svg',
+      text: 'Бережная транспортировка на оборудованных автомобилях'
     },
     { 
-      text: 'Бережная транспортировка на оборудованных автомобилях'
+      image: './img/icons/star-black.svg',
+      text: 'В удобное для вас время'
     },  
     { 
+      image: './img/icons/star-black.svg',
       text: 'Доставка по Петербургу, области и пригородам'
     }
   ]
@@ -21,4 +25,8 @@ article.advantages.visible__md
     ul.advantages-list
       each item in list
         li.advantages-item
-          p= item.text
+          .advantages-item__icon
+            .pic 
+              img(src= item.image)
+          .advantages-item__text
+            p!= item.text

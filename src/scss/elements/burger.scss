@@ -1,13 +1,13 @@
 .burger {
-	width: 72px;
-	height: 26px;
+	width: 19px;
+	height: 15px;
 	cursor: pointer;
 	z-index: 1;
 	position: relative;
 
 	& .menu-switch {
-		width: 72px;
-		height: 26px;
+		width: 19px;
+		height: 15px;
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -20,8 +20,9 @@
 		&::before,
 		&::after {
 			content: "";
-			width: 26px;
+			width: 19px;
 			height: 2px;
+			background-color: #1a1a1a;
 			position: absolute;
 			left: 0%;
 			top: 50%;
@@ -29,10 +30,6 @@
 			margin-top: -1px;
 			transition: all 0.3s ease-in-out;
 			transform: translateZ(0);
-		}
-
-		& span {
-			width: 20px;
 		}
 
 		&::before {

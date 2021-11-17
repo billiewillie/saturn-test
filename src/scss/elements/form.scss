@@ -1,8 +1,6 @@
 form.form {
 	display: flex;
 	flex-direction: column;
-	padding: 20px 20px 0 20px;
-	margin-bottom: 40px;
 	position: relative;
 
 	& .form__field {
@@ -71,11 +69,5 @@ form.form {
 				right: 50%;
 			}
 		}
-	}
-}
-
-@media (min-width: 992px) {
-	form.form {
-		padding: 40px 40px 0 40px;
 	}
 }
