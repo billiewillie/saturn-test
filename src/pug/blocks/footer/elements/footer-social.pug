@@ -2,19 +2,23 @@
 - 
   let list = [
     {
-      href: '/'
+      href: '/',
+      image: './img/icons/facebook-icon.svg'
     },
-        {
-      href: '/'
+    {
+      href: '/',
+      image: './img/icons/facebook-icon.svg'
     },
-        {
-      href: '/'
+    {
+      href: '/',
+      image: './img/icons/facebook-icon.svg'
     }
   ]
 
 .footer-social 
-  p= title
+  p.footer-social__title= title
   ul.footer-social-list 
     each item in list
       li.footer-social-item 
-        a.footer-social-link(href= item.href) link
+        a.footer-social-link(href= item.href)
+          img(src= item.image)

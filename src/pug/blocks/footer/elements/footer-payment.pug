@@ -1,3 +1,21 @@
-.payment  
-  p card
-  p card
+- 
+  let list = [
+    {
+      image: './img/maestro-card.png'
+    },
+        {
+      image: './img/maestro-card.png'
+    },
+        {
+      image: './img/maestro-card.png'
+    },
+        {
+      image: './img/maestro-card.png'
+    }
+  ]
+
+.footer-payment  
+  each item in list
+    .footer-payment__card
+      .pic 
+        img(src= item.image)

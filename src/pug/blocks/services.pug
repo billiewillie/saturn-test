@@ -3,11 +3,23 @@
   let list = [
     {
       href: '/',
-      title: 'title 1'
+      title: 'title 1',
+      image: './img/car.png'
     },
       {
       href: '/',
-      title: 'title 2'
+      title: 'title 2',
+      image: './img/car.png'
+    },
+    {
+      href: '/',
+      title: 'title 3',
+      image: './img/car.png'
+    },
+      {
+      href: '/',
+      title: 'title 4',
+      image: './img/car.png'
     }
   ]
 
@@ -17,5 +29,8 @@ article.services.hidden__md
     ul.services-list
       each item in list
         li.services-item
+          .services-item__pic   
+            .pic 
+              img(src= item.image)
           a.services-item__link(href= item.href)
             h3.services-item__title= item.title

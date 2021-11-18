@@ -1,18 +1,18 @@
-- let text = 'addsfdsgs'
+- let text = 'У вас остались вопросы?<br>Позвоните нам!'
 - 
   let numbers = [
     {
-      href: '/',
-      number: '888888888'
+      href: 'tel:88123222266',
+      number: '8 (812) 322-22-66'
     },
     {
-      href: '/',
-      number: '7777777'
+      href: 'tel:88001002112',
+      number: '8 (800) 100-21-12'
     }
   ]
 
 .footer-numbers
-  p= text
+  p.footer-numbers__text!= text
   each item in numbers
-    a.footer-numbers-item(href= item.href)
+    a.footer-numbers__item(type='tel' href= item.href)
       span= item.number
