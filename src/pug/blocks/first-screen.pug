@@ -40,14 +40,16 @@
 
 article.first-screen.visible__md
   .container.first-screen-container
-    ul.first-screen-list
+    ul.first-screen-list 
       each item in list
         if(item.active)
           li.first-screen-item.active
             a.first-screen-item__link= item.text
+            include ../elements/triangle
         else
           li.first-screen-item
             a.first-screen-item__link= item.text
+            include ../elements/triangle
     .first-screen-slider
       .first-screen-slider__item 
         .first-screen-slider__item-pic

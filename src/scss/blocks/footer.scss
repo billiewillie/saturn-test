@@ -37,6 +37,38 @@
 		}
 	}
 
+	&-mobile {
+		&-top {
+			padding: 15px 0;
+			display: flex;
+
+			border-bottom: 1px solid #636d8b;
+		}
+
+		&-bottom {
+			padding: 15px 0;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			display: flex;
+
+			&__item {
+				width: 50%;
+				margin-bottom: 14px;
+
+				&:nth-child(3),
+				&:nth-child(4) {
+					margin-bottom: 0;
+				}
+			}
+
+			&__link {
+				text-decoration: underline;
+				text-underline-offset: 2px;
+				font-size: 14px;
+			}
+		}
+	}
+
 	&-menu {
 		display: flex;
 		justify-content: space-between;

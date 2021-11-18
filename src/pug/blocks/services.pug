@@ -12,10 +12,10 @@
   ]
 
 article.services.hidden__md
-  .inner-container.inner-container_main
+  .services-container
     h2.title 
-    ul.services-list.slider
+    ul.services-list
       each item in list
-        li.services-item.slider-item
+        li.services-item
           a.services-item__link(href= item.href)
-            h3.title.slider-item__title= item.title
+            h3.services-item__title= item.title

@@ -8,6 +8,8 @@ const slider = new Flickity(services, {
 	contain: true,
 	watchCSS: true,
 	cellAlign: "left",
+	pageDots: false,
+	prevNextButtons: false,
 });
 
 export default slider;

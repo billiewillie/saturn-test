@@ -64,12 +64,16 @@
 	&-notice {
 		&__text {
 			font-size: 14px;
+			margin-bottom: 5px;
 		}
 		&__link {
 			text-decoration: underline;
 			color: #656565;
 			font-size: 12px;
 			text-underline-offset: 2px;
+			&:hover {
+				text-decoration: none;
+			}
 		}
 	}
 }

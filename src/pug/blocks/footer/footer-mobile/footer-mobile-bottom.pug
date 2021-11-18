@@ -1,5 +1,24 @@
+- 
+  let list = [
+    {
+      href: "/",
+      text: '8 (812) 322-22-66'
+    },
+    {
+      href: "/",
+      text: 'Обратная связь'
+    },
+    {
+      href: "/",
+      text: 'Санкт-Петербург'
+    },
+    {
+      href: "/",
+      text: 'Полная версия сайта'
+    }
+  ]
+
 .footer-mobile-bottom
-  a(type='tel') 8 (812) 322-22-66
-  a(href="/") Обратная связь
-  a(href="/") Санкт-Петербург 
-  a(href="/") Полная версия сайта
+  each item in list
+    .footer-mobile-bottom__item
+      a.footer-mobile-bottom__link(type='tel' href= item.href)= item.text
