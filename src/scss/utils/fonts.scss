@@ -4,3 +4,24 @@
 	font-style: normal;
 	src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
 }
+
+@font-face {
+	font-display: swap;
+	font-family: "HelveticaNeueCyr-light";
+	font-style: light;
+	src: url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "HelveticaNeueCyr-medium";
+	font-style: medium;
+	src: url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "HelveticaNeueCyr-bold";
+	font-style: bold;
+	src: url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");
+}

@@ -1,19 +1,25 @@
 - 
   let list = [
     {
+      image: './img/icons/star.svg',
       text: "правильный ассортимент"
     },
-        {
+    {
+      image: './img/icons/star.svg',
       text: "правильная цена"
     },
-        {
+    {
+      image: './img/icons/star.svg',
       text: "наличие на складе"
     },
   ]
 
-.footer-desktop-bottom
-  .inner-container
+.footer-desktop-bottom 
+  .container
     ul.footer-desktop-bottom-list   
       each item in list
         li.footer-desktop-bottom-item 
-          span= item.text
+          .footer-desktop-bottom-item__pic
+            .pic 
+              img(src= item.image)
+          span.footer-desktop-bottom-item__text= item.text

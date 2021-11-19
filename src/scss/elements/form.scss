@@ -7,12 +7,16 @@ form.form {
 		position: relative;
 
 		& input.input {
-			padding: 0px 0 5px;
+			padding: 7px 10px;
 			width: 100%;
 			line-height: 1;
-			background-color: transparent;
+			border: 1px solid #dbdbdb;
+			background-color: #fafafa;
 			cursor: pointer;
-
+			background-image: url(../img/icons/star-black.svg);
+			background-size: 18px;
+			background-repeat: no-repeat;
+			background-position: 95% 50%;
 			&:focus {
 				outline: none;
 			}
@@ -23,8 +27,7 @@ form.form {
 			}
 
 			&::placeholder {
-				font-weight: 300;
-				color: rgba(255, 255, 255, 0.6);
+				color: #000;
 			}
 		}
 

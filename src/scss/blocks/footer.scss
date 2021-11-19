@@ -2,17 +2,28 @@
 	background-color: $blue;
 	color: #fff;
 
+	@media (min-width: $desktop) {
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+		background: rgb(6, 37, 74);
+		background: linear-gradient(180deg, rgba(6, 37, 74, 1) 0%, rgba(2, 21, 41, 1) 57%);
+	}
+
 	&-desktop {
 		display: flex;
 		flex-direction: column;
+
 		&-top {
 			margin-bottom: 20px;
 			&-container {
 				display: flex;
 				justify-content: space-between;
 				column-gap: 30px;
+				padding: 0 10px;
 			}
 		}
+
 		&-middle {
 			margin-bottom: 10px;
 			&-container {
@@ -28,22 +39,38 @@
 				}
 			}
 		}
+
 		&-credits {
 			text-align: center;
+			margin-bottom: 20px;
 			& span {
 				font-size: 14px;
 			}
 		}
+
 		&-bottom {
 			width: 100%;
 			padding: 25px 0;
+			background-color: #021223;
+
 			&-list {
 				display: flex;
 				justify-content: space-between;
 			}
+
 			&-item {
-				color: #fff;
-				text-transform: uppercase;
+				display: flex;
+				align-items: center;
+
+				&__pic {
+					height: 36px;
+					margin-right: 15px;
+				}
+				& span {
+					font-size: 16px;
+					color: #fff;
+					text-transform: uppercase;
+				}
 			}
 		}
 	}
@@ -109,7 +136,7 @@
 		}
 
 		&-column {
-			width: 25%;
+			width: 22.3%;
 		}
 	}
 
@@ -124,6 +151,12 @@
 		border-radius: 0 0 5px 5px;
 		padding: 15px 10px 30px;
 
+		@media (min-width: $desktop) {
+			-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+		}
+
 		&__text {
 			color: #000;
 		}
@@ -131,6 +164,7 @@
 
 	&-social {
 		margin-bottom: 45px;
+		padding: 0 10px;
 		&__title {
 			margin-bottom: 15px;
 		}
@@ -180,16 +214,44 @@
 
 	&-payment {
 		display: flex;
-		justify-content: space-between;
 		flex-wrap: wrap;
 		margin-bottom: 20px;
+		column-gap: 14px;
 		&__card {
 			border-radius: 3px;
-			width: 48%;
+			border: 2px solid #fff;
+			background-color: #fff;
+			width: 56px;
+			height: 37px;
 			margin-bottom: 3px;
 			padding: 2px;
 			flex-grow: 0;
 			flex-shrink: 0;
+		}
+	}
+
+	&-sitemap {
+		display: flex;
+		align-items: flex-end;
+
+		&__pic {
+			width: 30px;
+			margin-right: 12px;
+		}
+
+		&__link {
+			& span {
+				text-decoration: underline;
+				text-transform: uppercase;
+				font-size: 12px;
+				text-underline-offset: 2px;
+			}
+
+			&:hover {
+				& span {
+					text-decoration: none;
+				}
+			}
 		}
 	}
 }

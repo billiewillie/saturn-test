@@ -1,4 +1,4 @@
-form.form
-  .form__field
-    input.input(type="text" name='имя' placeholder='Ваше имя' required)
-    span.bar
+mixin form(text)
+  form.form(class=attributes.class)
+    .form__field
+      input.input(type="text" placeholder= text)(name=attributes.name)

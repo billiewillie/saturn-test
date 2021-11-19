@@ -24,9 +24,9 @@ nav.menu
     each item in list
       if(item.active)
         li.menu-item.active
-          a(href= item.href)
+          a.menu-item__link(href= item.href)
             span= item.text
       else
         li.menu-item  
-          a(href= item.href)
+          a.menu-item__link(href= item.href)
             span= item.text

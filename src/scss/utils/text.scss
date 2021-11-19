@@ -10,7 +10,7 @@ h6 {
 
 h1 {
 	font-size: $fz-h1-mobile;
-
+	font-family: $font_bold;
 	@media (min-width: $desktop) {
 		font-size: $fz-h1-desktop;
 	}
@@ -25,7 +25,7 @@ h1 {
 
 h2 {
 	font-size: $fz-h2-mobile;
-
+	font-family: $font_bold;
 	@media (min-width: $tablet) {
 		font-size: $fz-h2-tablet;
 	}
@@ -44,7 +44,7 @@ h2 {
 h3 {
 	font-size: $fz-h3-mobile;
 	line-height: 1.1;
-
+	font-family: $font_bold;
 	&.title {
 		font-weight: bold;
 	}
@@ -57,6 +57,7 @@ a {
 
 p {
 	line-height: 1.1;
+	font-family: $font;
 	@media (min-width: $desktop) {
 		font-size: 13px;
 	}

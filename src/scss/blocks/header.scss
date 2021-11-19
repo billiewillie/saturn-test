@@ -40,6 +40,7 @@
 			& span {
 				text-decoration: underline;
 				text-underline-offset: 1px;
+				font-family: $font_light;
 			}
 		}
 	}
@@ -64,10 +65,12 @@
 	}
 
 	&-bottom {
-		padding: 0;
+		padding: 0 0 10px;
 		background-color: $bg_color;
+		position: relative;
 		@media (min-width: $desktop) {
 			border-radius: 5px 5px 0 0;
+			padding: 0;
 		}
 
 		&__container {
@@ -76,6 +79,10 @@
 			justify-content: space-between;
 			@media (min-width: $desktop) {
 				padding: 0 25px;
+				border-radius: 3px;
+				-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+				-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+				box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 			}
 		}
 	}
@@ -88,15 +95,43 @@
 	}
 
 	&-search {
+		width: 66%;
 		@media (min-width: $desktop) {
 			order: 2;
 			width: 300px;
+			margin-right: 30px;
+		}
+
+		& form.form .form__field input.input {
+			border-radius: 5px;
+			&::placeholder {
+				@media (min-width: $desktop) {
+					color: rgba(158, 162, 167, 0.65);
+					font-size: 12px;
+				}
+			}
 		}
 	}
 
 	&-catalog {
+		width: 32%;
+
+		&__button {
+			background-image: url(../img/icons/star-black.svg);
+			background-size: 18px;
+			background-repeat: no-repeat;
+			background-position: 95% 50%;
+			border: 1px solid #b2c2d4;
+			text-transform: uppercase;
+			color: #000;
+			font-size: 12px;
+			width: 100%;
+			display: block;
+			padding: 9px 7px;
+		}
+
 		@media (min-width: $desktop) {
-			width: 200px;
+			width: 172px;
 			order: 1;
 		}
 	}
@@ -164,6 +199,7 @@
 			color: #fff;
 			text-decoration: underline;
 			text-underline-offset: 2px;
+			font-family: $font_light;
 		}
 
 		&:hover {
@@ -188,6 +224,7 @@
 			column-gap: 10px;
 			font-size: 13px;
 			line-height: 1.1;
+			font-family: $font_medium;
 			&-pic {
 				width: 25px;
 				height: 25px;

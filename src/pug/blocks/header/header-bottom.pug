@@ -1,8 +1,15 @@
+include ../../elements/form
 .header-bottom
   .inner-container.header-bottom__container
     .header-search 
-      include ../../elements/form
+      +form('Поиск')(class='hidden__md', name='search')
+      +form('Что вы ищете?')(class='visible__md', name='search')
     .header-catalog
-      p каталог
+      a.header-catalog__button.hidden__md(href="/")
+        span Каталог
+      .select-wrapper
+        .field__arrow
+        select.select     
+          option КАТАЛОГ
     .header-menu.visible__md
       include ../../elements/menu

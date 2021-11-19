@@ -1,2 +1,13 @@
+- 
+  let item = {
+    image: './img/icons/star.svg',
+    text: 'карта сайта',
+    href: '/'
+  }
+
 .footer-sitemap 
-  p карта сайта
+  .footer-sitemap__pic
+    .pic 
+      img(src= item.image)
+  a.footer-sitemap__link(href= item.href)
+    span= item.text
