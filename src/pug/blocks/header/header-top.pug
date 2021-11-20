@@ -9,19 +9,18 @@
         span= phone
     .visible__md.header-account
       .header-top-icons
-        .header-liked
-          //- .pic
-          //-   img(src='./img/icons/star.svg')
-          //-   .header-amount__icon
-          //-     span 20
-          i.icon.icon-user
+        a.header-liked(href= '/')
+          i.icon.icon-liked
             svg
-              use(xlink:href="./img/sprite.svg#facebook-icon")
-        .header-saved 
-          .pic
-            img(src='./img/icons/star.svg')
-            .header-amount__icon
-              span 20
+              use(xlink:href="./img/sprite.svg#star")
+          .header-amount__icon
+            span 20
+        a.header-saved(href= '/')
+          i.icon.icon-saved
+            svg
+              use(xlink:href="./img/sprite.svg#saved")
+          .header-amount__icon
+            span 20
       .header-user 
         a.user-name(href='/')= name 
         .header-amount__icon

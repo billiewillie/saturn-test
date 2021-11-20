@@ -1,15 +1,15 @@
 - 
   let list = [
     {
-      img: './img/icons/star-dark.svg',
+      img: './img/sprite.svg#smartphone',
       text: 'Ваш город:<br><a class="header-info__city">Санкт-Петербург</a>'
     },
     {
-      img: './img/icons/star-dark.svg',     
+      img: './img/sprite.svg#smartphone',
       text: '<a class="header-info__number"><b>8 (812) 322-22-66</b><br>Заказать звонок</a>'
     },
     {
-      img: './img/icons/star-dark.svg',
+      img: './img/sprite.svg#smartphone',
       text: '<span class="accent">(10)</span> товаров<br> на сумму <span class="accent">5 364 р.</span>'
     }
   ]
@@ -17,8 +17,10 @@
 .header-info.visible__md
   each item in list
     .header-info__part 
-      .pic.header-info__part-pic
-        img(src= item.img)
+      .header-info__part-pic
+        i.icon.icon-info
+          svg
+            use(xlink:href= item.img)
       .header-info__part-content
         p!= item.text
 

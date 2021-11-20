@@ -174,7 +174,7 @@
 
 	&-liked {
 		position: relative;
-		& .pic {
+		& .icon-liked {
 			width: 25px;
 			height: 25px;
 		}
@@ -187,8 +187,8 @@
 
 	&-saved {
 		position: relative;
-		& .pic {
-			width: 25px;
+		& .icon-saved {
+			width: 20px;
 			height: 25px;
 		}
 		& .header-amount__icon {
@@ -252,6 +252,13 @@
 			&-pic {
 				width: 25px;
 				height: 25px;
+				display: flex;
+				justify-content: center;
+
+				& .icon-info {
+					width: 20px;
+					height: 26px;
+				}
 			}
 
 			&:nth-child(2) {
