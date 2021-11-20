@@ -5,7 +5,7 @@
 	background-image: none;
 	background-repeat: no-repeat;
 	padding: 50px 0;
-	@media (min-width: $tablet) {
+	@media (min-width: $desktop) {
 		background-image: url(../img/learn-price-bg.png);
 	}
 	&__container {
@@ -15,12 +15,16 @@
 	}
 	&__pic {
 		width: 50%;
+		@media (min-width: $desktop) {
+			width: 55%;
+		}
 	}
 	&__content {
 		width: 50%;
 		text-align: right;
-		@media (min-width: $tablet) {
+		@media (min-width: $desktop) {
 			text-align: left;
+			width: 45%;
 		}
 	}
 
@@ -30,12 +34,13 @@
 		text-align: right;
 		text-transform: none;
 		margin-bottom: 20px;
-		@media (min-width: $tablet) {
+		@media (min-width: $desktop) {
 			text-transform: uppercase;
 			font-size: 20px;
 			text-align: left;
 			font-weight: 600;
 			line-height: 1.6;
+			letter-spacing: 3px;
 		}
 
 		& span {

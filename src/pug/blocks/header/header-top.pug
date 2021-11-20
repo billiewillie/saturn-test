@@ -10,10 +10,13 @@
     .visible__md.header-account
       .header-top-icons
         .header-liked
-          .pic
-            img(src='./img/icons/star.svg')
-            .header-amount__icon
-              span 20
+          //- .pic
+          //-   img(src='./img/icons/star.svg')
+          //-   .header-amount__icon
+          //-     span 20
+          i.icon.icon-user
+            svg
+              use(xlink:href="./img/sprite.svg#facebook-icon")
         .header-saved 
           .pic
             img(src='./img/icons/star.svg')

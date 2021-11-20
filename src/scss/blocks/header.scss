@@ -116,6 +116,30 @@
 	&-catalog {
 		width: 32%;
 
+		& .select-wrapper {
+			position: relative;
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 0;
+				height: 0;
+				top: 0;
+				bottom: 0;
+				right: 20px;
+				margin: auto;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 6px solid #3a3a3a;
+			}
+
+			& select {
+				font-family: $font_medium;
+				font-size: 14px;
+				width: 100%;
+			}
+		}
+
 		&__button {
 			background-image: url(../img/icons/star-black.svg);
 			background-size: 18px;

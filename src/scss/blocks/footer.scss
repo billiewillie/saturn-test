@@ -223,10 +223,15 @@
 			background-color: #fff;
 			width: 56px;
 			height: 37px;
-			margin-bottom: 3px;
+			margin-bottom: 10px;
 			padding: 2px;
 			flex-grow: 0;
 			flex-shrink: 0;
+
+			&:nth-child(3),
+			&:nth-child(4) {
+				margin-bottom: 0;
+			}
 		}
 	}
 
@@ -235,7 +240,7 @@
 		align-items: flex-end;
 
 		&__pic {
-			width: 30px;
+			width: 25px;
 			margin-right: 12px;
 		}
 
