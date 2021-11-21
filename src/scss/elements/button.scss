@@ -8,7 +8,6 @@
 	overflow: hidden;
 	border: 1px solid $red;
 	background-color: #fff;
-	box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 	transition: box-shadow 0.3s ease-in-out;
 
 	&::before {
@@ -24,6 +23,7 @@
 	}
 
 	@media (min-width: $desktop) {
+		box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 		border-radius: 3px;
 		padding: 17px 40px;
 	}
