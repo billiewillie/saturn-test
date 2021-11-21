@@ -1,15 +1,15 @@
 - 
   let list = [
     {
-      image: './img/icons/star.svg',
+      img: './img/sprite.svg#check-box',
       text: "правильный ассортимент"
     },
     {
-      image: './img/icons/star.svg',
+      img: './img/sprite.svg#check-box',
       text: "правильная цена"
     },
     {
-      image: './img/icons/star.svg',
+      img: './img/sprite.svg#check-box',
       text: "наличие на складе"
     },
   ]
@@ -20,6 +20,7 @@
       each item in list
         li.footer-desktop-bottom-item 
           .footer-desktop-bottom-item__pic
-            .pic 
-              img(src= item.image)
+            i.icon
+              svg
+                use(xlink:href= item.img)
           span.footer-desktop-bottom-item__text= item.text

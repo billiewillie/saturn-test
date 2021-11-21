@@ -63,8 +63,16 @@
 				align-items: center;
 
 				&__pic {
-					height: 36px;
+					height: 40px;
+					width: 40px;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
 					margin-right: 15px;
+					& .icon {
+						height: 40px;
+						width: 40px;
+					}
 				}
 				& span {
 					font-size: 16px;
@@ -242,6 +250,11 @@
 		&__pic {
 			width: 25px;
 			margin-right: 12px;
+
+			& .icon {
+				width: 25px;
+				height: 20px;
+			}
 		}
 
 		&__link {

@@ -1,13 +1,14 @@
 - 
   let item = {
-    image: './img/icons/star.svg',
+    img: './img/sprite.svg#domain-www',
     text: 'карта сайта',
     href: '/'
   }
 
 .footer-sitemap 
   .footer-sitemap__pic
-    .pic 
-      img(src= item.image)
+    i.icon
+      svg
+        use(xlink:href= item.img)
   a.footer-sitemap__link(href= item.href)
     span= item.text
