@@ -3,6 +3,10 @@ form.form {
 	flex-direction: column;
 	position: relative;
 
+	&-subscribe {
+		flex-direction: row;
+	}
+
 	& .form__field {
 		position: relative;
 
@@ -17,6 +21,7 @@ form.form {
 			background-size: 18px;
 			background-repeat: no-repeat;
 			background-position: 95% 50%;
+
 			&:focus {
 				outline: none;
 			}
@@ -28,6 +33,19 @@ form.form {
 
 			&::placeholder {
 				color: #000;
+			}
+
+			&-subscribe {
+				font-size: 11px;
+				padding: 8px 10px;
+				background-image: none;
+				border-radius: 3px 0 0 3px;
+				border: 1px solid #d0d0d0;
+				box-shadow: inset 1px 0px 5px 0px rgba(0, 0, 0, 0.5);
+
+				&::placeholder {
+					color: #d0d0d0;
+				}
 			}
 		}
 
@@ -70,6 +88,21 @@ form.form {
 			}
 			&::after {
 				right: 50%;
+			}
+		}
+
+		& .button-subscribe {
+			padding: 0;
+			width: 25px;
+			height: 30px;
+			border-radius: 0 3px 3px 0;
+			background-color: $red;
+			box-shadow: none;
+			color: #fff;
+			font-family: $font_bold;
+
+			&::before {
+				display: none;
 			}
 		}
 	}
