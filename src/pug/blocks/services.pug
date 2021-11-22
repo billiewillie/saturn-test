@@ -3,23 +3,23 @@
   let list = [
     {
       href: '/',
-      title: 'title 1',
-      image: './img/car.png'
+      title: 'Доставка',
+      image: './img/car-mobile.png'
     },
       {
       href: '/',
-      title: 'title 2',
-      image: './img/car.png'
+      title: 'Разгрузка и подъем',
+      image: './img/car-mobile.png'
     },
     {
       href: '/',
       title: 'title 3',
-      image: './img/car.png'
+      image: './img/car-mobile.png'
     },
       {
       href: '/',
       title: 'title 4',
-      image: './img/car.png'
+      image: './img/car-mobile.png'
     }
   ]
 
@@ -31,6 +31,6 @@ article.services.hidden__md
         li.services-item
           .services-item__pic   
             .pic 
-              img(src= item.image)
+              img(src= item.image, loading="lazy")
           a.services-item__link(href= item.href)
             h3.services-item__title= item.title

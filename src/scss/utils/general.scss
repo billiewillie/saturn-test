@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: $font;
 	@media (min-width: $desktop) {
@@ -29,6 +33,10 @@ body {
 			padding: 0 65px;
 		}
 	}
+}
+
+b {
+	font-family: $font_bold;
 }
 
 .main {
@@ -63,6 +71,13 @@ i.icon {
 		max-width: 100%;
 		fill: currentcolor;
 		stroke: none;
+	}
+}
+
+.bucket {
+	.icon {
+		width: 30px;
+		height: 30px;
 	}
 }
 

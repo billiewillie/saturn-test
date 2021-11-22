@@ -1,4 +1,9 @@
+- let image = './img/sprite.svg#trolley'
+
 .bucket 
-  img(src='./img/icons/star-black.svg')
+  .pic 
+    i.icon
+      svg
+        use(xlink:href= image)
   .amount-icon.amount-icon__bucket
     span 2

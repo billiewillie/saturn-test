@@ -1,4 +1,13 @@
+-
+  let item = {
+    text: "оплата заказа картой",
+    href: "/",
+    img: './img/sprite.svg#card',
+  }
+
 .footer-mobile-top
-  a(href="/") оплата заказа картой
-  .pic 
-    p icon
+  a.link(href= item.href)= item.text
+  .footer-mobile-top__pic
+    i.icon
+      svg
+        use(xlink:href= item.img)

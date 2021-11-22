@@ -141,17 +141,17 @@
 		}
 
 		&__button {
-			background-image: url(../img/icons/star-black.svg);
+			background-image: url(../img/icons/read-book.svg);
 			background-size: 18px;
 			background-repeat: no-repeat;
-			background-position: 95% 50%;
+			background-position: 92% 50%;
 			border: 1px solid #b2c2d4;
 			text-transform: uppercase;
 			color: #000;
 			font-size: 12px;
 			width: 100%;
 			display: block;
-			padding: 9px 7px;
+			padding: 10px 7px;
 		}
 
 		@media (min-width: $desktop) {

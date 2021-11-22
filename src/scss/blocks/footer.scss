@@ -63,8 +63,16 @@
 				align-items: center;
 
 				&__pic {
-					height: 36px;
+					height: 40px;
+					width: 40px;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
 					margin-right: 15px;
+					& .icon {
+						height: 40px;
+						width: 40px;
+					}
 				}
 				& span {
 					font-size: 16px;
@@ -81,6 +89,19 @@
 			display: flex;
 			justify-content: space-between;
 			border-bottom: 1px solid #636d8b;
+			align-items: center;
+
+			& .link {
+				text-decoration: underline;
+				text-underline-offset: 2px;
+			}
+
+			&__pic {
+				& .icon {
+					width: 30px;
+					height: 25px;
+				}
+			}
 		}
 
 		&-bottom {
@@ -159,6 +180,7 @@
 
 		&__text {
 			color: #000;
+			margin-bottom: 20px;
 		}
 	}
 
@@ -242,6 +264,11 @@
 		&__pic {
 			width: 25px;
 			margin-right: 12px;
+
+			& .icon {
+				width: 25px;
+				height: 20px;
+			}
 		}
 
 		&__link {

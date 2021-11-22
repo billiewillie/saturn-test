@@ -12,8 +12,8 @@ article.delivery.visible__md
     .delivery-content 
       .delivery-content__pic
         .pic 
-          img(src="./img/delivery.png")
+          img(src="./img/delivery.png", loading='lazy')
       .delivery-content__details
-        p.delivery-content__details-text= question
+        h2.title.delivery-content__details-text= question
         +button('подробности')(href="/")
       
